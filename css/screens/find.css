@@ -1,0 +1,132 @@
+.header__icons span {
+    position: relative;
+}
+
+.find-dot {
+    display: flex;
+    position: absolute;
+    left: 87px;
+    bottom: 40px;
+}
+
+.recommended-friends {
+    border-top: var(--border-gray);
+    border-bottom: var(--border-gray);
+}
+
+.recommended-friends__header {
+    margin-top: 15px;
+    color: var(--color-gray);
+}
+
+.recommended-friends__text {
+    display: block;
+    text-align: center;
+    margin: 110px 0px;
+    color: var(--color-gray);
+    font-size: 20px;
+}
+
+.open-chat {
+    margin: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    opacity: 0.4;
+}
+
+.open-chat__title {
+    opacity: 0.9;
+    font-size: 18px;
+}
+
+.chat-room__header {
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+.chat-room__hashtag-upper {
+    text-transform: uppercase;
+    opacity: 0.4;
+    margin-bottom: 7px;
+}
+
+.chat-room__hashtag {
+    opacity: 0.4;
+    margin-bottom: 7px;
+}
+
+.chat-room__info {
+    display: flex;
+}
+
+.chat-room__info img {
+    height: 20px;
+    width: 20px;
+    border-radius: 5px;
+}
+
+.chat-room__members {
+    margin-left: 5px;
+    opacity: 0.3;
+}
+
+.chat-room__bar {
+    height: 15px;
+    width: 1.5px;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin: 0px 5px;
+}
+
+.chat-room__info span:last-child {
+    color: #FFA5DB;
+}
+
+.chat-room__image img {
+    height: 120px;
+    width: 120px;
+    border-radius: 20px;
+}
+
+.chat-room {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: var(--border-gray);
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.chat-room__image__heart {
+    background-color: rgb(0, 0, 0, 0.6);
+    color: white;
+    padding: 8px;
+    border-radius: 10px;
+    position: absolute;
+    right: 5px;
+    bottom: 10px;
+    font-size: 12px;
+}
+
+.chat-room__image__heart i {
+    margin-right: 5px;
+}
+
+.chat-room__image {
+    position: relative;
+}
+
+@keyframes heartanimation {
+    from {
+        color: white;
+    }
+
+    to {
+        color: tomato;
+        transform: scale(1.5);
+    }
+}
+
+.chat-room__image:hover i {
+    will-change: transform;
+    animation: heartanimation 0.3s linear infinite;
+}

@@ -1,0 +1,17 @@
+.low__icon {
+    margin: 10px 0px;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.low__icon__icon {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+}
+
+.low__icon__icon span {
+    margin-top: 15px;
+}

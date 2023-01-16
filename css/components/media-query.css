@@ -1,0 +1,26 @@
+#mobile,
+#landscape {
+    position: absolute;
+    top: 0px;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    font-weight: 600;
+    background-color: var(--yellow);
+    z-index: 99;
+}
+
+@media screen and (max-width:650px) {
+    #mobile {
+        display: none;
+    }
+}
+
+@media screen and (orientation:portrait) {
+    #landscape {
+        display: none;
+    }
+}
